@@ -49,15 +49,54 @@ However, there are some hard rules that you must abide by:
           </p>
         </div>
       ```
-     - Base:
+    - Bad:
       ``` HTML
         <div id='parent'>
         <p id='child'>
-          Note that the paragraph tag is indented once so it is inside both the opening and 
-          closing tag of the div. In this scenario, the div is the "parent" element, 
-          and the paragraph is the "child" element.
+          This text is indented properly, but the paragraph tag should be indented
+          to the right once inside of the div tag. See the "Good" example above for the
+          proper indentation.
         </p>
         </div>
       ```
+1. Nesting can get a little tricky with multiple layers!
+    - Good:
+      ``` HTML
+        <div id='parent'>
+          <h1>Welcome!</h1>
+          <p id='child'>
+            Look at this beautiful paragraph indentation! I looks like my favorite
+            code to read.
+          </p>
+          <h2>Here is a list!</h2>
+          <ul>
+            <li>I am a list item!</li>
+            <li>
+              When a list item is long enough to be split into multiple lines
+              the text gets wrapped and indented much like a paragraph tag, with the
+              list item tag indented once within the unordered list tag and the text
+              indented once with in the list item tag.
+            <li>
+            <li>One list item more for good meaure</li>
+          <ul>
+        </div>
+      ```
+      - Bad:
+        ``` HTML
+          <div id='parent'>
+            <h1>Welcome!</h1>
+          <p id='child'>Look at this sad paragraph indentation :(. It makes my code
+            much harder to read</p>
+          <h2>This is not indented properly!</h2>
+            <ul>
+            <li>I am a list item! That needs to be indented!</li>
+            <li>When a list item is long enough to be split into multiple lines
+            the text should get wrapped and indented like a paragraph tag, with the
+            list item tag indented once within the unordered list tag and the text
+            indented once with in the list item tag. This is not done properly at all!</li>
+            <li>One list item more that needs to be indented!</li>
+            <ul>
+          </div>
+        ```
 
 1. Remember the main objective: **make your code readable by others!** 
