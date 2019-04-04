@@ -53,8 +53,8 @@ However, there are some hard rules that you must abide by:
       ``` HTML
         <div id='parent'>
         <p id='child'>
-          This text is indented properly, but the paragraph tag should be indented
-          to the right once inside of the div tag. See the "Good" example above for the
+          This text is indented inside the paragraph tag, but the whole paragraph element needs
+          to be indented within the div tag. See the "Good" example above for the
           proper indentation.
         </p>
         </div>
@@ -65,19 +65,19 @@ However, there are some hard rules that you must abide by:
         <div id='parent'>
           <h1>Welcome!</h1>
           <p id='child'>
-            Look at this beautiful paragraph indentation! I looks like my favorite
+            Look at this beautiful paragraph indentation! It looks like my favorite
             code to read.
           </p>
           <h2>Here is a list!</h2>
           <ul>
-            <li>I am a list item!</li>
+            <li>I am a list item with few words!</li>
             <li>
               When a list item is long enough to be split into multiple lines
-              the text gets wrapped and indented much like a paragraph tag, with the
+              the text gets wrapped and indented much like the paragraph tag above, with the
               list item tag indented once within the unordered list tag and the text
               indented once with in the list item tag.
             <li>
-            <li>One list item more for good meaure</li>
+            <li>One more list item for good meaure</li>
           <ul>
         </div>
       ```
