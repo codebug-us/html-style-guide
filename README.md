@@ -81,7 +81,7 @@ However, there are some hard rules that you must abide by:
           <ul>
         </div>
       ```
-      - Bad:
+     - Bad:
         ``` HTML
           <div id='parent'>
             <h1>Welcome!</h1>
