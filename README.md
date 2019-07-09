@@ -58,13 +58,13 @@ However, there are some hard rules that you must abide by:
     - Good:
       ``` HTML
         <body>
-            <h1>List item 1</h1>
+            <h1>Heading 1</h1>
         </body>
       ```
     - Bad:
       ``` HTML
         <body>
-        <h1>List item 1</h1>
+        <h1>Heading 1</h1>
         </body>
       ```
     - Good:
@@ -86,6 +86,20 @@ However, there are some hard rules that you must abide by:
           proper indentation.
         </p>
         </div>
+      ```
+    - Good:
+      ``` HTML
+        <body>
+            <h1>Heading 1</h1>
+            <p>This is a paragraph tag that can fit on one line</p>
+        </body>
+      ```
+    - Bad:
+      ``` HTML
+        <body>
+            <h1>Heading 1</h1>
+        <p>This is a paragraph tag that can fit on one line</p>
+        </body>
       ```
 1. Nesting can get a little tricky with multiple layers!
     - Good:
