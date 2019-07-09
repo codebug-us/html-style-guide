@@ -41,6 +41,34 @@ However, there are some hard rules that you must abide by:
 1. Nested HTML elements should be indented to the right of their "parent" element.
     - Good:
       ``` HTML
+        <ol>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ol>
+      ```
+    - Bad:
+      ``` HTML
+        <ol>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+        </ol>
+      ```
+    - Good:
+      ``` HTML
+        <body>
+            <h1>List item 1</h1>
+        </body>
+      ```
+    - Bad:
+      ``` HTML
+        <body>
+        <h1>List item 1</h1>
+        </body>
+      ```
+    - Good:
+      ``` HTML
         <div id='parent'>
           <p id='child'>
             Note that the paragraph tag is indented once so it is inside both the opening and 
